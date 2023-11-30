@@ -1,0 +1,57 @@
+@use './variables' as a;
+
+.headline-large {
+    font-size: a.$fs-headline-large;
+    line-height: a.$lh-headline-large;
+    font-weight: a.$weight-bold;
+    letter-spacing: a.$traking-n-025;
+}
+
+.headline-medium {
+    font-size: a.$fs-headline-medium;
+    line-height: a.$lh-headline-medium;
+    font-weight: a.$weight-bold;
+}
+
+.headline-small {
+    font-size: a.$fs-headline-small;
+    line-height: a.$lh-headline-small;
+    font-weight: a.$weight-bold;
+}
+
+.title-large {
+    font-size: a.$fs-title-large;
+    line-height: a.$lh-title-large;
+    font-weight: a.$weight-semiBold;
+}
+
+.title-medium {
+    font-size: a.$fs-title-medium;
+    line-height: a.$lh-title-medium;
+    font-weight: a.$weight-semiBold;
+}
+
+.title-small {
+    font-size: a.$fs-title-small;
+    line-height: a.$lh-title-small;
+    font-weight: a.$weight-semiBold;
+}
+
+.body-large {
+    font-size: a.$fs-body-large;
+    line-height: a.$lh-body-large;
+    font-weight: a.$weight-regular;
+}
+
+.body-medium {
+    font-size: a.$fs-body-medium;
+    line-height: a.$lh-body-medium;
+    font-weight: a.$weight-regular;
+}
+
+.label-medium {
+    font-size: a.$fs-label-medium;
+    line-height: a.$lh-label-medium;
+    font-weight: a.$weight-semiBold;
+    letter-spacing: a.$traking-p-05;
+}
