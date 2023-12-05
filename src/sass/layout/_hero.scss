@@ -1,2 +1,48 @@
 @use '../abstracts' as a;
 
+.hero-banner {
+    display: none;
+}
+
+.hero {
+    position: relative;
+    background-image: a.$gradient;
+    color: a.$neutral-90;
+    padding-block: 130px 60px;
+    overflow: hidden;
+    isolation:isolate;
+}
+
+.hero-title {
+    color: a.$neutral-100;
+}
+
+.hero-text {
+    margin-block: 16px 32px;
+}
+
+.search-bar {
+    background: a.$white;
+    display: grid;
+    padding: 8px;
+    gap: 8px;
+    border-radius: 16px;
+    box-shadow: a.$shadow-4;
+}
+
+.search-item {
+    position: relative;
+    color: a.$neutral-50;
+}
+
+.search-item .search-item-field {
+    height: 76px;
+    padding: 48px 16px 12px;
+    border-radius: a.$radius-medium;
+    transition: a.$transition-duration-quick a.$transition-easing-quick;
+    cursor: pointer;
+}
+
+.search-item .search-item-field:where(:hover, :focus) {
+    background-color: a.$neutral-95;
+}
