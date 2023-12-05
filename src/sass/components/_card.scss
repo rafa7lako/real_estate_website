@@ -1,0 +1,26 @@
+
+@use '../abstracts/variables' as a;
+
+.card {
+    border-radius: a.$radius-large;
+    overflow: hidden;
+    box-shadow: a.$shadow-2;
+    transition: a.$transition-duration-quick a.$transition-easing-quick;
+
+    &-banner {
+        position: relative;
+
+        .img-cover {
+            transition: a.$transition-duration-smooth a.$transition-easing-quick;
+        }
+    }
+}
+
+.card:where(:hover, :focus-within) {
+    box-shadow: a.$shadow-4;
+}
+
+.card:where(:hover, :focus-within) .img-cover {
+    scale: 1.05;
+    rotate: 2deg;
+}

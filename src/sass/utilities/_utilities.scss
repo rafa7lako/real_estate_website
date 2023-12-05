@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as a;
+
 .material-symbols-rounded {
   display: block;
   width: 1em;
@@ -15,4 +17,23 @@
   max-width: 580px;
   width: 100%;
   margin-inline: auto;
+}
+
+.section {
+  padding-block-end: 60px;
+}
+
+.title-wrapper {
+  margin-block-end: 32px;
+}
+
+.img-holder {
+  aspect-ratio: var(--width) / var(--height);
+  background-color: a.$neutral-80;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
