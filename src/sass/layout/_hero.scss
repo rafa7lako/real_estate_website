@@ -46,3 +46,53 @@
 .search-item .search-item-field:where(:hover, :focus) {
     background-color: a.$neutral-95;
 }
+
+.search-item :where(.label, .material-symbols-rounded) {
+    position: absolute;
+    pointer-events: none;
+}
+
+.search-item .label {
+    top: 12px;
+    left: 16px;
+    color: a.$neutral-5;
+}
+
+.search-item .material-symbols-rounded {
+    top: 50%;
+    right: 16px;
+    translate: 0 -50%;
+    color: a.$primary-100;
+}
+
+.search-btn {
+    background: a.$primary-100;
+    color: a.$neutral-100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    padding-inline: 24px;
+    gap: 12px;
+    border-radius: 12px;
+    transition: a.$transition-duration-quick a.$transition-easing-quick;
+}
+
+
+.search-btn:where(:hover, :focus){
+    background-color: a.$primary-80;
+}
+.search-btn:where(:active, :focus-visible){
+    background-color: a.$primary-70;
+}
+
+.hero .bg-pattern {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    right: 0;
+    translate: 0 -50%;
+    min-height: 100%;
+    pointer-events: none;
+    z-index: -2;
+}
