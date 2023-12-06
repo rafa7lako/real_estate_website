@@ -1,2 +1,16 @@
 @use '../abstracts/variables' as a;
 
+.property {
+    padding-block-start: 60px;
+}
+
+.property .section-text {
+    margin-bottom: 8px 16px;
+    color: a.$neutral-30;
+}
+
+.property-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(280px, 1fr));
+    gap: 16px;
+}
