@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as a;
+
+.story .section-subtitle {
+    color: a.$primary-100;
+}
+
+.story .section-title {
+    margin-bottom: 12px;
+}
+
+.avatar-list {display: flex;}
+
+.avatar {
+    position: relative;
+    width: 60px;
+    height: 46px;
+    border-radius: a.$radius-full;
+    border: 3px solid a.$neutral-98;
+    overflow: hidden;
+}
+
+.avatar:not(:first-child) {
+    margin-inline-start: -10px;
+}
