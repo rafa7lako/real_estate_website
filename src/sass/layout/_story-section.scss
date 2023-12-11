@@ -1,24 +1,95 @@
-@use '../abstracts/variables' as a;
+@use "../abstracts/variables" as a;
 
 .story .section-subtitle {
-    color: a.$primary-100;
+	color: a.$primary-100;
 }
 
 .story .section-title {
-    margin-bottom: 12px;
+	margin-bottom: 12px;
 }
 
-.avatar-list {display: flex;}
+.avatar-list {
+	display: flex;
+}
 
 .avatar {
-    position: relative;
-    width: 60px;
-    height: 46px;
-    border-radius: a.$radius-full;
-    border: 3px solid a.$neutral-98;
-    overflow: hidden;
+	position: relative;
+	width: 60px;
+	height: 46px;
+	border-radius: a.$radius-full;
+	border: 3px solid a.$neutral-98;
+	overflow: hidden;
 }
 
 .avatar:not(:first-child) {
-    margin-inline-start: -10px;
+	margin-inline-start: -10px;
+}
+
+.avatar .overlay-content {
+	position: absolute;
+	inset: 0;
+    display: grid;
+    place-items: center;
+    background-color: 0000000F;
+    color: a.$neutral-100;
+}
+
+.story .title-wrapper {
+    display: grid;
+    gap: 16px;
+}
+
+.story-list {
+    display: grid;
+    gap: 16px;
+}
+
+.story-card {
+    position: relative;
+    height: 360px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: a.$radius-large;
+    overflow: hidden;
+    transition: a.$transition-duration-quick a.$transition-easing-quick;
+}
+
+.story-card:where(:hover, :focus-visible) {
+    scale: 0.99;
+}
+
+.story-card .overlay-content {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, #00000000 33.33%, #000000cc 100%);
+    color: a.$white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 24px;
+}
+
+.story-card .rating-wrapper {
+    display: flex;
+    align-items: center;
+    margin-block-start: 8px;
+}
+
+.story-card .rating-text {
+    margin-inline-start: 12px;
+    color: a.$neutral-80;
+}
+
+.story-card .material-symbols-rounded {
+    font-variation-settings: 'FILL' 1;
+    color: a.$yellow;
+}
+
+.story-card .card-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: a.$radius-circle;
+    box-shadow: a.$shadow-3;
+    overflow: hidden;
 }
