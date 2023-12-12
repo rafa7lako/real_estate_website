@@ -1,2 +1,46 @@
 @use '../abstracts/variables' as a;
 
+.footer {
+    background-color: a.$primary-20;
+    color: a.$neutral-90;
+}
+
+.footer-top .container {
+    padding-block: 60px;
+    display: grid;
+    gap: 24px;
+}
+
+.footer-text {
+    margin-block: 16px;
+}
+
+.footer-list-title {
+    margin-block-end: 16px;
+}
+
+.footer-list {
+    display: grid;
+    gap: 16px;
+}
+
+.footer-link {
+    transition: a.$transition-duration-quick a.$transition-easing-quick;
+}
+
+.footer-link:where(:hover, :focus-visible) {color: a.$primary-100;}
+
+.social-list {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-bottom {
+    border-block-start: 1px solid a.$neutral-20;
+}
+
+.footer-bottom .container {
+    padding-block: 20px;
+    display: grid;
+    justify-content: center;
+}

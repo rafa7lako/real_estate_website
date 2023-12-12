@@ -1,5 +1,6 @@
 @use './variables' as a;
 
+
 .headline-large {
     font-size: a.$fs-headline-large;
     line-height: a.$lh-headline-large;
@@ -55,3 +56,4 @@
     font-weight: a.$weight-semiBold;
     letter-spacing: a.$traking-p-05;
 }
+

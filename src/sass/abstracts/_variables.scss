@@ -1,3 +1,5 @@
+
+
 /* CSS variables for reusablity across all files (including above imported) */
 
 // Colors
@@ -30,9 +32,9 @@ $gradient: linear-gradient(90deg, rgba(13,49,102,1) 0%, rgba(23,85,178,1) 100%, 
 // Font size
 
 $fs-base: 62.5%;
-$fs-headline-large: 3.6rem;
-$fs-headline-medium: 2.8rem;
-$fs-headline-small: 2.8rem;
+$fs-headline-large: 3.6rem !default;
+$fs-headline-medium: 2.8rem !default;
+$fs-headline-small: 2.8rem !default;
 $fs-title-large: 2.2rem;
 $fs-title-medium: 2rem;
 $fs-title-small: 1.8rem;
@@ -43,9 +45,9 @@ $fs-label-medium: 1.4rem;
 
 // Line height
 
-$lh-headline-large: 44px;
-$lh-headline-medium: 36px;
-$lh-headline-small: 36px;
+$lh-headline-large: 44px !default;
+$lh-headline-medium: 36px !default;
+$lh-headline-small: 36px !default;
 $lh-title-large: 28px;
 $lh-title-medium: 24px;
 $lh-title-small: 24px;
@@ -88,3 +90,4 @@ $shadow-4: 0px 10px 20px 0px #0000001A;
 $transition-easing-quick: cubic-bezier(0, 0.7, 0.3, 1);
 $transition-duration-quick: 200ms;
 $transition-duration-smooth: 500ms;
+
