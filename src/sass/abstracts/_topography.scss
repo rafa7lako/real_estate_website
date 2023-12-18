@@ -2,21 +2,21 @@
 
 
 .headline-large {
-    font-size: a.$fs-headline-large;
-    line-height: a.$lh-headline-large;
+    font-size: var(--fs-headline-large);
+    line-height: var(--lh-headline-large);
     font-weight: a.$weight-bold;
     letter-spacing: a.$traking-n-025;
 }
 
 .headline-medium {
-    font-size: a.$fs-headline-medium;
-    line-height: a.$lh-headline-medium;
+    font-size: var(--fs-headline-medium);
+    line-height: var(--lh-headline-medium);
     font-weight: a.$weight-bold;
 }
 
 .headline-small {
-    font-size: a.$fs-headline-small;
-    line-height: a.$lh-headline-small;
+    font-size: var(--fs-headline-small);
+    line-height: var(--lh-headline-small);
     font-weight: a.$weight-bold;
 }
 
