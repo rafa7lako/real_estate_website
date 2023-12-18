@@ -36,6 +36,40 @@
         display: grid;
         grid-template-columns: 1fr max-content;
         align-items: center;
+        gap: 40px;
+        margin-block-end: 48px;
+    }
+
+    /**
+    * HERO
+    */
+
+    .hero {
+        padding-block: 160px 100px ;
+    }
+
+    .search-bar {
+        grid-template-columns: 160px 160px 1fr max-content;
+        gap: 0;
+    }
+
+    .search-item .material-symbols-rounded {
+        display: none;
+    }
+
+    .search-item:not(:last-of-type)::after {
+        content: "";
+        position: absolute;
+        top: 16px;
+        left: 100%;
+        bottom: 16px;
+        width: 1px;
+        background-color: a.$neutral-90;
+    }
+
+    .search-btn {
+        height: 100%;
+        margin-inline-start: 8px;
     }
 
 }
