@@ -6,6 +6,11 @@
 	--lh-headline-large: 44px;
 	--lh-headline-medium: 36px;
 	--lh-headline-small: 36px;
+
+	--neutral-80: #c2c6cc;
+	--neutral-100: #fafcff;
+
+	--radius-circle: 50%
 }
 
 /* CSS variables for reusablity across all files (including above imported) */
@@ -41,6 +46,8 @@ $gradient: linear-gradient(
 	rgba(23, 85, 178, 1) 100%,
 	rgba(27, 97, 204, 1) 100%
 );
+
+
 
 // Font size
 
